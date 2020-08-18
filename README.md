@@ -1,14 +1,13 @@
 # policy ++ wg artifacts
 
-A starter repo to donate to Kubernetes-sigs so the community can own and iterate on stories over time, with issue tracking, as we close out the policy++ wg.  The ultimate goal of this repo is to make concrete proposals that can be integrated into a series of KEPs, demos, and walkthroughs that will benefit the overall SIG.
+# Purpose
 
-# Background
+After about 4 months of deliberation over various network policy user stories, the Sig-network network-policy subgroup (retroactively formed in July of 2020) decided that it was time to 
 
-Between April 28 - > August 13th of 2020, folks from 10 companies or so met once a week to discuss policies that they had wanted, heard about, or envisoned.  These included things like:
+- start looking at how the networkpolicy api could be improved by actively designing changes against it
+- create a combination of hacking on KEP-like docs and possibly CRD(s)
+- while formulating an overall strategy to tie those docs together
 
-- node aware policies for controlling access to node-host services
-- better metadata for targetting policies against services
-- explicit deny, allow, logging policies for better administrative management
-- being able to define policies as service level constructs, rather then pod constructs
+So, although we all know that this work may not get instantly accepted into sig-network and will require iteration and so on, I think the overall direction of the group is *its time to try to make some forward progress, in spite of the ambiguous future*.
 
-The purpose of this repo is to codify each of these stories as a more formal document that we can move forward with to create a more structured and information-dense set of asks to the SIG-network group for newer network policy APIs.
+PLEASE MAKE A PR TO THIS REPO WITH YOUR GITHUB ID AND COMPANY FOR TRACKING PURPOSES so we can get started!
