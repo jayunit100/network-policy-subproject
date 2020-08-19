@@ -1,3 +1,5 @@
+Initial proposal or priorities, based on feasabiliy and overall user engagement... reprioritization welcome, please PR changes and in case of any major conflicts we can discuss in the broader group.
+
 # Application scoped User stories
 
 ## tier-1
