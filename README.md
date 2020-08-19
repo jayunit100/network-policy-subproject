@@ -95,6 +95,12 @@ Some people just feel the need to hack.  Given that many concepts can be impleme
 
 <TODO>
 
+#### Templates
+
+Owners: Gobind
+
+Since many people simple want easy ways to iterate use policies, now, a collection of links to templates and tutorials on how to better use policies in their existing state [templates](templates.md).
+
 #### Suggestion
 
 After evaluating these docs, this group proposes *blah*.
