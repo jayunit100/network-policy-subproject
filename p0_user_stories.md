@@ -54,13 +54,12 @@ These still might be explored by this group but are descoped from the primary us
 
 - Prioritize Network Policy - I want to create a rule that I’m sure will be executed before anything else.
 
-- I want to log when a network policy rule is enforced administratively
+- I want to log all the times that someone from the outside world was deined access to a pod in my cluster by a NetworkPolicy rule.
 
-- I want to enforce policies between nodes and proceses outside of nodes (which are not pods)
+- I want a pool of DMZ nodes in my cluster to prevent all outgoing traffic to my cassandra cluter which has highly sensitive data on it which is known to be vulnerable due to a recently discovered CVE.
 
-- Add a level of indirection between policies so that a request can be made for a security boundary that is fulfilled in a separate step (i.e OPA semantics)
+- I want a developer in Namespace X to build an app that automatically requests access to a database in Namespace Y, but I don't want to *grant* that access until an admin approves it.
 
 - I want to have a named way to add a policy for containers that can or cannot access a MySQL instance in my data center, without knowing that services IP address.
 
-- I want to restrict certain processes in a pod without restricting others, so that  some processes are not able to make certain network calls.
-
+- I want to restrict certain processes in a pod without restricting others, so that  some processes are not able to make certain network calls in a cluster where certain set pods running an old version of Nginx are at risk of being comprimised.
