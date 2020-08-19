@@ -89,7 +89,7 @@ Although not all of the concepts above have a straight forward implementation, s
 
 #### Part 3b: CRDs
 
-Owners: Aneesh, Jay, Abhishek
+Owners: Anish, Jay, Abhishek
 
 Some people just feel the need to hack.  Given that many concepts can be implemented over time as CRDs which create or manage large numbers of network policy objects, as an R&D project, experimental iteration on a NetworkPolicy Operator, similar to that of https://github.com/rushabh268/kubernetes-network-policy-controller, will be considered as part of the ongoing R&D of this group.
 
@@ -104,5 +104,3 @@ Since many people simple want easy ways to iterate use policies, now, a collecti
 #### Suggestion
 
 After evaluating these docs, this group proposes *blah*.
-
-
