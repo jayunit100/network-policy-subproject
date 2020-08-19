@@ -1,4 +1,4 @@
-# The NetworkPolicy++ Subproject
+# The NetworkPolicy++ Subproject 'super-kep'
 
 This repository attempts to capture all of the work done by the NetworkPolicy working group as a series of documents which
 can be reused, and formulated into a series of KEPs, CRDs, and proposals over time, based on ideas the communtiy came up with on how to improve the NetworkPolicy API.
