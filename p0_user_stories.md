@@ -4,9 +4,9 @@ Initial proposal or priorities, based on feasabiliy and overall user engagement.
 
 ## tier-1
 
-- I want 2 apps in different namespaces to connect, but can't read the labels for those namespaces from my Kubernetes client.
+- I want 2 apps in different namespaces to connect, but can't read (or write) the labels for those namespaces from my Kubernetes client.   I cannot select pods for this because I don't know all the labels and names of pod/services that i want to contact ahead of time. 
 
-- I want 2 apps for different services to talk to each other, but don't know their labels.
+- I want different pods (with potentially different labels) that fulfill a service to be able talk to each other, without talking to other services...  but don't know the labels on these services.
 
 - I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policy's associated with them.
 
