@@ -62,6 +62,6 @@ These still might be explored by this group but are descoped from the primary us
 
 - I want a developer in Namespace X to build an app that automatically requests access to a database in Namespace Y, but I don't want to *grant* that access until an admin approves it.
 
-- I want to have a named way to add a policy for containers that can or cannot access a MySQL instance in my data center, without knowing that services IP address.
-
 - I want to restrict certain processes in a pod without restricting others, so that  some processes are not able to make certain network calls in a cluster where certain set pods running an old version of Nginx are at risk of being comprimised.
+
+- I want to have a named way to add a policy for containers that can or cannot access a MySQL instance in my data center, without knowing that services IP address.
