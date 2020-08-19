@@ -58,9 +58,7 @@ These still might be explored by this group but are descoped from the primary us
 
 - I want to enforce policies between nodes and proceses outside of nodes (which are not pods)
 
-- Matching a namespace by name
-
-- Add a level of indirection
+- Add a level of indirection between policies so that a request can be made for a security boundary that is fulfilled in a separate step (i.e OPA semantics)
 
 - I want to have a named way to add a policy for containers that can or cannot access a MySQL instance in my data center, without knowing that services IP address.
 
