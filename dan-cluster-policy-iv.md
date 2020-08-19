@@ -1,4 +1,4 @@
-Taken from the first section of https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYgesG-itQHMiU/edit# 
+Taken from the fourth section of https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYgesG-itQHMiU/edit# 
 
 <!--
 **Note:** When your KEP is complete, all of these comment blocks should be removed.
@@ -61,7 +61,7 @@ should be approved by the remaining approvers and/or the owning SIG (or
 SIG Architecture for cross-cutting KEPs).
 -->
 
-# KEP-1111: Usability improvmeents to the NetworkPolicy API
+# KEP-1111: Creation of a ClusterNetworkPolicy API
 
 <!--
 This is the title of your KEP. Keep it short, simple, and descriptive. A good
