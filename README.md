@@ -41,10 +41,10 @@ These documents are formatted similarly to KEPs for the sake of uniformity.  Som
 
 ### Non-Goals
 
-- Graphical User Interfaces (GUIs) are out of scope
+- Graphical User Interfaces (GUIs) and CLI tools are out of scope
 - Protecting non Kubernetes workloads
 - Intra-pod restrictions (i.e., process restriction, kubectl exec)
-- Support for encrpytion of traffic
+- Support for encryption of traffic
 
 ## Deliverables
 
@@ -83,7 +83,7 @@ high level actionable goals (no KEPs or detailed API changes suggested here).
 
 Owners: Ricardo, Chris
 
-Although not all of the concepts above have a straight forward implementation, some very clear and obvious improvments to the NetworkPolicy API can be conservatively made.  These will be iterated on over time.
+Although not all of the concepts above have a straight forward implementation, some very clear and obvious improvements to the NetworkPolicy API can be conservatively made.  These will be iterated on over time.
 
 <TODO>
 
