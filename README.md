@@ -72,10 +72,8 @@ Owners: Abhishek (maybe dan?)
 The following set of conceptual docs outlines the progression from user stories towards
 high level actionable goals (no KEPs or detailed API changes suggested here).
 
-1) [a model of how to administer security on a k8s cluster](1_model.md)
-2) [a series of improvmenets to the v1 policy API](1_v1_api.md)
-3) [creation of a cluster-scoped API](1_cluster_scoped.md)
-4) [a completely new, integrated network policy api](1_v2_api.md)
+1) [create/update developer focused API](1_dev_scoped.md)
+2) [creation of a cluster-scoped API](1_cluster_scoped.md)
 
 ### Implementation
 
