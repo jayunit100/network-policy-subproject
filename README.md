@@ -18,12 +18,10 @@ These documents are formatted similarly to KEPs for the sake of uniformity.  Som
 - Kubernetes is becoming the OS of the cloud
 - Users prefer vendor specific APIs due to lack of Kubernetes Network Policy API
   deficiencies
-- The Network Policy API should serve both application developers and platform
-  operators equally
-- Unified network security approach can simplify auditing
 - Cluster administrators need APIs beyond current devloper focused APIs for securing the cluster, not just apps
+- Unified network security approach can simplify auditing
 - APIs are confusing for basic use cases like default deny
-- People want to secure apps using other abstractions rather than just labels
+- People want to secure apps using other abstractions in addition to label selectors
 
 ### Goals
 
@@ -32,11 +30,8 @@ These documents are formatted similarly to KEPs for the sake of uniformity.  Som
 - Develop a new administrator API so that RBAC can be used to separate roles if desired
 - Develop a new set of APIs for application policies
 - Deliver value as quickly as possible
-- More user friendly network policies for network admins
 - Better documentation!
-- Universal network protocol/stack support (i.e., ICMP, SCTP, telco/carrier use cases)
 - Generalize the concept of endpoint (not just pods)
-- Comprehensive conformance testing to validate CNI implementations
 - Comprehensive error reporting
 
 ### Non-Goals
@@ -45,6 +40,7 @@ These documents are formatted similarly to KEPs for the sake of uniformity.  Som
 - Protecting non Kubernetes workloads
 - Intra-pod restrictions (i.e., process restriction, kubectl exec)
 - Support for encryption of traffic
+- Support NetworkPolicies spanning multiple clusters
 
 ## Deliverables
 
