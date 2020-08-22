@@ -1,49 +1,55 @@
 # A Cluster Scoped extension to the NetworkPolicy API
 
-Taken from the fourth section of https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYgesG-itQHMiU/edit# 
+Also refer the fourth section of https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYgesG-itQHMiU/edit# 
 
 ## Summary
 
-This proposal outlines a plan for implementing *cluster level* network policies in the Kubernetes API.
+This proposal outlines a plan for implementing *cluster level* NetworkPolicies
+in the Kubernetes API.
 
 ## Motivation
 
-Administrators are not capable of easily administering clusters at large scales using policys as a Network security implementation.
+Current NetworkPolicy API is tailored towards application developers to protect
+their workloads from unintended usage. Thus, the NetworkPolicy API is unable to
+satisfy some of the use cases which are relevant to cluster administrators.
 
 ### Goals
 
-The goal's of this initiative are to make the following improvements to the existing NetworkPolicy API.
+The goal of this initiative is to develop a new security API with the
+following in mind:
 
-- Allow users to implement default cluster network policies
-- Allow users to implemement common DNS rules for network policies across a cluster
-- Allow users to implemement common APIServer access (internal service) rules for network policies across a cluster
-- Allow users to select pod to node network allow policies
+- Administrator focused APIs at a cluster scope
+- Ability to set default security policy for the cluster
+- Ability to secure traffic between Pod and Nodes in addition to regular
+  Pod-Pod traffic
 
 ### Non-Goals
 
-- Enable traffic policies that effect things outside the cluster
+- Enable traffic policies that affect things outside the cluster
+- Secure traffic between multiple clusters
 - Cluster level monitoring or threat detection
+- CLI/devOps tool to gain more visibility in the cluster
 
 ## Proposal
 
-<abishek> 
+<abhishek, ...> 
 
 ### User Stories (Optional)
 
-<abishek> 
+<abhishek, ...> 
 
 ### Notes/Constraints/Caveats (Optional)
 
-<abishek>
+<abhishek, ...>
 
 ### Risks and Mitigations
 
-<abishek>
+<abhishek, ...>
 
 ## Design Details
 
-<abishek>
+<abhishek, ...>
 
 ## Alternatives
 
-<abishek>
+<abhishek, ...>
