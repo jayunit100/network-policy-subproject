@@ -16,9 +16,9 @@ Taken from https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYge
 
 - I wrote a policy, but am not sure if my policy did the right thing, nor if it has taken effect on the pods that I'm concerned with, yet.
 
-## tier-2
-
 - Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are.
+
+## tier-2
 
 - I want to be able to scrape from pod endpoints for every pod in my cluster, but can't afford to make new policies for each one given the large rate of pod churn.
 
