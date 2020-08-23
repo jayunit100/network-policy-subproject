@@ -18,7 +18,7 @@ Taken from https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYge
 
 - Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are.
 
-- I want visualization of my network policies, as a tool to help me create accurate network policies as well as to help me verify existing network policies for correctness
+- I want visualization of my network policies, as a tool to help me create accurate network policies as well as to help me verify existing network policies for correctness (TODO this may need to go in *descoped* eventually, will decide on 8/24)
 
 ## tier-2
 
