@@ -73,5 +73,10 @@ These still might be explored by this group but are descoped from the primary us
 - I want to have a named way to add a policy for containers that can or cannot access a MySQL instance in my data center, without knowing that services IP address.
 
 
-CHANGELOG: Matt Fennwick requested adding a visualization story to tier-1
-CHANGELOG: Jay Moved the abov request for tier-1 to "Descoped" since its not an API thing, but it is a valid user story. 
+# CHANGELOG
+
+As we move things via PRs, lets note the context so that we can detect cycles and or changes that are reversing previous user requests.  If we notice any obvious disagreements, we can resolve it as a group.  This is an alterantive to voting which might collect 'passive' opinions which havent been deeply thought out.
+
+CHANGELOG
+- *Matt Fenwick* requested adding a visualization story to tier-1
+- *Jay vyas* Moved the abov request for tier-1 to "Descoped" since its not an API thing, but it is a valid user story. 
