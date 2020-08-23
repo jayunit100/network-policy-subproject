@@ -18,7 +18,7 @@ Taken from https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYge
 
 - Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are.
 
-- I want visualization of my network policies, as a tool to help me create accurate network policies as well as to help me verify existing network policies for correctness.
+- I want visualization of my network policies, as a tool to help me create accurate network policies as well as to help me verify existing network policies for correctness
 
 ## tier-2
 
@@ -67,3 +67,5 @@ These still might be explored by this group but are descoped from the primary us
 - I want to restrict certain processes in a pod without restricting others, so that  some processes are not able to make certain network calls in a cluster where certain set pods running an old version of Nginx are at risk of being comprimised.
 
 - I want to have a named way to add a policy for containers that can or cannot access a MySQL instance in my data center, without knowing that services IP address.
+
+CHANGELOG: Matt Fennwick requested adding a visualization story to tier-1
