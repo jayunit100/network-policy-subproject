@@ -4,7 +4,7 @@ Taken from https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYge
 
 # Terminology
 
-- *app*: a collection of programs running in a namespace
+- *app*: a program or collection of programs running in a namespace that comprise a end-user consumed service.  Common "guestbook", "blackduck", "backend API services", or the "ELK" stack, which usually is consumed through Kibana.
 
 # Application scoped User stories
 
