@@ -2,6 +2,10 @@ Initial proposal or priorities, based on feasabiliy and overall user engagement.
 
 Taken from https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYgesG-itQHMiU/edit# and https://docs.google.com/document/d/1AtWQy2fNa4qXRag9cCp5_HsefD7bxKe3ea2RPn8jnSs/edit . 
 
+# Terminology
+
+- *app*: a collection of programs running in a namespace
+
 # Application scoped User stories
 
 ## tier-1
@@ -19,7 +23,7 @@ Taken from https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYge
 
 - I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them. 
 
-- Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are (see https://github.com/kubernetes/kubernetes/issues/51726 for official issue pointing to this).
+- Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are (see https://github.com/kubernetes/kubernetes/issues/51726 for official issue pointing to this).  This might result in revising or removing policy types.
 
 ## tier-2
 
