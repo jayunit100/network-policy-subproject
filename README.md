@@ -36,7 +36,7 @@ These documents are formatted similarly to KEPs for the sake of uniformity.  Som
 
 ### Non-Goals
 
-- Graphical User Interfaces (GUIs) and CLI tools are out of scope
+- Graphical User Interfaces (GUIs) are out of scope
 - Protecting non Kubernetes workloads
 - Intra-pod restrictions (i.e., process restriction, kubectl exec)
 - Support for encryption of traffic
