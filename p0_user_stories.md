@@ -24,7 +24,8 @@ Taken from
 
 ### v1 modifying
 
-- I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them. 
+- I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them.
+  - We can use a slice instead of a string for CIDR (KEP-able)
 
 - Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are (see https://github.com/kubernetes/kubernetes/issues/51726 for official issue pointing to this).  This might result in revising or removing policy types.
 
