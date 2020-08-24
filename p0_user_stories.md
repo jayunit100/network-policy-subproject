@@ -11,8 +11,6 @@ Taken from https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYge
 
 - I want different pods (with potentially different labels) that fulfill a service to be able talk to each other, without talking to other services but I don't know the labels on these services.
 
-
-
 - I dont want to look at 10 or 100 policies to figure out whether I have the right allow rules.
 
 - I wrote a policy, but am not sure if my policy did the right thing, nor if it has taken effect on the pods that I'm concerned with, yet.
@@ -21,7 +19,7 @@ Taken from https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYge
 
 - I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them. 
 
-- Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are.
+- Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are (see https://github.com/kubernetes/kubernetes/issues/51726 for official issue pointing to this).
 
 ## tier-2
 
