@@ -6,15 +6,20 @@ Taken from https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYge
 
 ## tier-1
 
+### non v1 modifying
 - I want 2 apps in different namespaces to connect, but can't read (or write) the labels for those namespaces from my Kubernetes client.   I cannot select pods for this because I don't know all the labels and names of pod/services that I want to contact ahead of time. 
 
 - I want different pods (with potentially different labels) that fulfill a service to be able talk to each other, without talking to other services but I don't know the labels on these services.
 
-- I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them.
+
 
 - I dont want to look at 10 or 100 policies to figure out whether I have the right allow rules.
 
 - I wrote a policy, but am not sure if my policy did the right thing, nor if it has taken effect on the pods that I'm concerned with, yet.
+
+### v1 modifying
+
+- I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them. 
 
 - Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are.
 
