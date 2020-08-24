@@ -1,6 +1,9 @@
 Initial proposal or priorities, based on feasabiliy and overall user engagement... reprioritization welcome, please PR changes and in case of any major conflicts we can discuss in the broader group.  
 
-Taken from https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYgesG-itQHMiU/edit# and https://docs.google.com/document/d/1AtWQy2fNa4qXRag9cCp5_HsefD7bxKe3ea2RPn8jnSs/edit . 
+Taken from 
+- conversations and zoom meetings
+- https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYgesG-itQHMiU/edit# 
+- https://docs.google.com/document/d/1AtWQy2fNa4qXRag9cCp5_HsefD7bxKe3ea2RPn8jnSs/edit . 
 
 # Terminology
 
@@ -85,6 +88,7 @@ These still might be explored by this group but are descoped from the primary us
 As we move things via PRs, lets note the context so that we can detect cycles and or changes that are reversing previous user requests.  If we notice any obvious disagreements, we can resolve it as a group.  This is an alterantive to voting which might collect 'passive' opinions which havent been deeply thought out.
 
 CHANGELOG
-- *Abhishek, Chris, Jay* linking to tim hockins issue around defining `empty from` as `none`
-- *Matt Fenwick* requested adding a visualization story to tier-1
+- *Jay* addressed clarity issues in the 'cant connect to the internet' and 'namespace by NAME' user stories.  
+- *Abhishek, Chris, Jay* linking to tim hockins issue around defining `empty from` as `none`.
+- *Matt Fenwick* requested adding a visualization story to tier-1.
 - *Jay vyas* Moved the abov request for tier-1 to "Descoped" since its not an API thing, but it is a valid user story. 
