@@ -11,7 +11,7 @@ Taken from https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYge
 ## tier-1
 
 ### non v1 modifying
-- I want 2 apps in different namespaces to connect, but can't read (or write) the labels for those namespaces from my Kubernetes client.   I cannot select pods for this because I don't know all the labels and names of pod/services that I want to contact ahead of time. 
+- I want 2 apps in different namespaces to connect via namespace NAME, because I can't read (or write) the labels for those namespaces from my Kubernetes client.   I cannot select pods for this because I don't know all the labels and names of pod/services that I want to contact ahead of time. 
 
 - I want different pods (with potentially different labels) that fulfill a service to be able talk to each other, without talking to other services but I don't know the labels on these services.
 
@@ -51,11 +51,11 @@ other pods should be blocked from accessing it via any IP.
 - I want to block all pods from being able to reach the AWS metadata server (169.254.169.254)
 except for pods in Namespace X, except I want to run kube2iam as a metadata proxy, so pods trying to access the metadata server should be redirected to that instead.
 
-- I want all pods to be blocked from accessing the internet.
-
-- I want all pods to be blocked from accessing the internet by default, but developers can add policies declaring what sites they need access to. The sites will be reachable, but if hackers break into the pod they can’t reach anywhere else besides those sites, except they can’t access 192.168.0.0/16 even if they declare it.
-
 - I want pods in Namespace X to only have cluster egress via a proxy server provided by Service Y.
+
+- I want all pods to be blocked from accessing the internet, no matter what, without having to explicitly add my K8s CIDR ranges allow rules .  This would be a convenience story (otherwise, CIDR ranges are sufficient to satisfy this user stories). 
+
+- I want all pods to be blocked from accessing the internet by default, with exception allowing case-by-case allow-listing of certain IP ranges.  Convenience/Sugar story.
 
 # Descoped from NetworkPolicy API
 
