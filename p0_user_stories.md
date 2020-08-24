@@ -46,7 +46,7 @@ other pods should be blocked from accessing it via any IP.
 
 - I want all namespaces to be “isolated” (don’t accept traffic from other Namespaces) by default; developers must specify if they want other namespaces to be able to access their services.
 
-- I want to administratively put a choke point between pods that arent in the same app so i can audit cross-app dependencies and implement ingress controls by default in my cluster.
+- I want to administratively put a choke point (gateway) between pods that arent in the same app so i can audit cross-app dependencies and implement ingress controls by default in my cluster.  (Workaround: Create a namespace selector around the targetted namespace, which only allows traffic from a predetermined ingress point.  See https://github.com/jayunit100/network-policy-subproject/issues/14) for further discussion. 
 
 - I want to block all pods from being able to reach the AWS metadata server (169.254.169.254)
 except for pods in Namespace X, except I want to run kube2iam as a metadata proxy, so pods trying to access the metadata server should be redirected to that instead.
