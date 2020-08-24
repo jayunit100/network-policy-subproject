@@ -25,6 +25,6 @@ NetpolExtended {
         KubeDNSService: true
    Status:
         List[Pod,Pod] ConnectedViaNetworkPolicy
-        List[Pod,Pod] ConnectedViaGlobalPolicy
+        List[Pod,Pod] ConnectedViaClusterPolicy
 }
 ```
