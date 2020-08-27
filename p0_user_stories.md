@@ -27,6 +27,9 @@ Taken from
 - I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them.
   - We can use a slice instead of a string for CIDR (KEP-able)
 
+- I want to allow my application to communicate with high level ports of another "legacy" application, which is not accessed via a service, and which binds to a random port or binds a a random port (like passive FTP)
+  - This can be added as an additional portsRange field, which might be an array of portRange object that contains a from and a to integer field
+
 - Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are (see https://github.com/kubernetes/kubernetes/issues/51726 for official issue pointing to this).  This might result in revising or removing policy types.
 
 ## tier-2
