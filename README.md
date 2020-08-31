@@ -15,6 +15,11 @@ These documents are formatted similarly to KEPs for the sake of uniformity.  Som
 
 ## Motivation
 
+Kubernetes is becoming the API equivalent of the OS for the cloud. The
+combinations of cloud fabrics, host operating systems and Kubernetes
+distributions make this easier.
+
+
 - Kubernetes is becoming the OS of the cloud
 - Users prefer vendor specific APIs due to lack of Kubernetes Network Policy API
   deficiencies
@@ -24,6 +29,8 @@ These documents are formatted similarly to KEPs for the sake of uniformity.  Som
 - People want to secure apps using other abstractions in addition to label selectors
 
 ### Goals
+
+
 
 - Don't break anything
 - Simplify migration when using new capabilities

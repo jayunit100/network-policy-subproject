@@ -14,18 +14,31 @@ Taken from
 ## tier-1
 
 ### non v1 modifying
-- I want 2 apps in different namespaces to connect via namespace NAME, because I can't read (or write) the labels for those namespaces from my Kubernetes client.   I cannot select pods for this because I don't know all the labels and names of pod/services that I want to contact ahead of time. 
+- I want 2 apps in different namespaces to connect via namespace NAME, because I
+  can't read (or write) the labels for those namespaces from my Kubernetes
+  client.   I cannot select pods for this because I don't know all the labels
+  and names of pod/services that I want to contact ahead of time.
+  
+  [Name as Policy Target](stories/name_as_policy_target.md)
 
 - I want different pods (with potentially different labels) that fulfill a service to be able talk to each other, without talking to other services but I don't know the labels on these services.
+  
+  [Ingress Rules Targeting Services](stories/ingress_rules_targeting_services.md)
 
 - I dont want to look at 10 or 100 policies to figure out whether I have the right allow rules.
 
+  [Pod Reachability Query](stories/pod_reachability_query.md)
+
 - I wrote a policy, but am not sure if my policy did the right thing, nor if it has taken effect on the pods that I'm concerned with, yet.
+
+  [Policy Query](stories/policy_query.md)
 
 ### v1 modifying
 
 - I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them.
   - We can use a slice instead of a string for CIDR (KEP-able)
+
+  [Named Endpoint Set](stories/named_endpoint_set.md)
 
 - I want to allow my application to communicate with high level ports of another "legacy" application, which is not accessed via a service, and which binds to a random port or binds a a random port (like passive FTP)
   - This can be added as an additional portsRange field, which might be an array of portRange object that contains a from and a to integer field
@@ -35,6 +48,8 @@ Taken from
 ## tier-2
 
 - I want to be able to scrape from pod endpoints for every pod in my cluster, but can't afford to make new policies for each one given the large rate of pod churn.
+
+  [Cluster Scoped Policy](stories/cluster_scoped_policy.md)
 
 # Cluster scoped user stories
 
