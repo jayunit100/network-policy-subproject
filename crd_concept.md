@@ -1,5 +1,8 @@
 # An EAV model for network policys
 
+An EAV model (entity, attribute, value) gives you the ability to natively define graphs as the implementation for policies, as opposed to other 
+concepts which dont match quite as naturally to security boundaries.
+
 Givne that several use cases suggested expanding policy APIs to cover
 higher level boundaries:
 
