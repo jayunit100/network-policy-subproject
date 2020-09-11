@@ -110,8 +110,11 @@ NetpolExtended {
             // will allow all traffic to all namespaces in this selector
             matchLabels
         K8sDefaultService: true
+            // helps to stop you from shooting yourself in the foot by blocking egress to dns
         KubeDNSService: true
+            // core dns?
    Status:
+       // current 'status' to show you what your policy is *currently* doing -- think truthtables: something easy to visually grok
         List[Pod,Pod] ConnectedViaNetworkPolicy
         List[Pod,Pod] ConnectedViaClusterPolicy
 }
