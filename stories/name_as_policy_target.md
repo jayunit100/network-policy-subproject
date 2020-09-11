@@ -6,6 +6,7 @@ As a network policy creator, I want to target source and destination endpoints i
 network policy rules by referring to named resources rather than resource
 labels.
 
+*List specific resources that could be targeted
 
 
 
