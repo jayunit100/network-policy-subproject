@@ -45,6 +45,10 @@ Taken from
 
 - Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are (see https://github.com/kubernetes/kubernetes/issues/51726 for official issue pointing to this).  This might result in revising or removing policy types.
 
+- I want to write policies which deny specific traffic.
+
+- I want to assign priorities to my policies, and have the CNI use the priorities to resolve conflicts.
+
 ## tier-2
 
 - I want to be able to scrape from pod endpoints for every pod in my cluster, but can't afford to make new policies for each one given the large rate of pod churn.
