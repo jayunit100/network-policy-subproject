@@ -1,3 +1,7 @@
+Update: 
+
+(9/13/2020) Matt fennwick took a crack at this here, https://github.com/mattfenwick/kube-prototypes/tree/master/pkg/netpol/crd .  In the process, he found a few corner cases in types.go that specifically warrant v2 api changes.  He'll be presenting at the next sig-network or networkpolicy API group meeting.  
+
 # An EAV model for network policys
 
 An EAV model (entity, attribute, value) gives you the ability to natively define graphs as the implementation for policies, as opposed to other 
