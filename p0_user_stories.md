@@ -68,6 +68,8 @@ other pods should be blocked from accessing it via any IP.
 
 - I want to block all pods from being able to reach ports on nodes. The rule should automatically cover all nodes, and all IPs on those nodes, except for port 53.
 
+- I want to write policies which deny specific traffic, and I want to assign priorities to my policies, and have the CNI use the priorities to resolve conflicts (recently formally added, mattfennwick)
+
 ## tier-2
 
 - I want all namespaces to be “isolated” (don’t accept traffic from other Namespaces) by default; developers must specify if they want other namespaces to be able to access their services.
@@ -112,7 +114,7 @@ As we move things via PRs, lets note the context so that we can detect cycles an
 
 CHANGELOG
 - *Ricardo* added service selector policy
-- *Matt Fennwick* added priority policies
+- *Mattfennwick* added a tier 1 policy for priorization / resolving 
 - *Cody* added links v1modifying generified stories (policy target and so on)
 - *Jay* addressed clarity issues in the 'cant connect to the internet' and 'namespace by NAME' user stories.  
 - *Abhishek, Chris, Jay* linking to tim hockins issue around defining `empty from` as `none`.
