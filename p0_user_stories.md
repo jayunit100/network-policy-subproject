@@ -45,10 +45,6 @@ Taken from
 
 - Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are (see https://github.com/kubernetes/kubernetes/issues/51726 for official issue pointing to this).  This might result in revising or removing policy types.
 
-- I want to write policies which deny specific traffic.
-
-- I want to assign priorities to my policies, and have the CNI use the priorities to resolve conflicts.
-
 ## tier-2
 
 - I want to be able to scrape from pod endpoints for every pod in my cluster, but can't afford to make new policies for each one given the large rate of pod churn.
@@ -67,6 +63,8 @@ other pods should be blocked from accessing it via any IP.
 - I want to target all apps with network policies, but most of my apps need apiserver access, and i dont know the k8s service IP because all of my clusters have different Service CIDRs.
 
 - I want to block all pods from being able to reach ports on nodes. The rule should automatically cover all nodes, and all IPs on those nodes, except for port 53.
+
+- I want to write policies which deny specific traffic, and I want to assign priorities to my policies, and have the CNI use the priorities to resolve conflicts (recently formally added, mattfennwick)
 
 ## tier-2
 
@@ -111,6 +109,7 @@ These still might be explored by this group but are descoped from the primary us
 As we move things via PRs, lets note the context so that we can detect cycles and or changes that are reversing previous user requests.  If we notice any obvious disagreements, we can resolve it as a group.  This is an alterantive to voting which might collect 'passive' opinions which havent been deeply thought out.
 
 CHANGELOG
+- *Mattfennwick* added a tier 1 policy for priorization / resolving 
 - *Cody* added links v1modifying generified stories (policy target and so on)
 - *Jay* addressed clarity issues in the 'cant connect to the internet' and 'namespace by NAME' user stories.  
 - *Abhishek, Chris, Jay* linking to tim hockins issue around defining `empty from` as `none`.
