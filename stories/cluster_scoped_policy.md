@@ -1,5 +1,11 @@
 # Cluster Scoped Policy
 
+## Owners
+
+- Gobind
+- Abhishek Raut
+- Yang
+
 ## User Story
 
 A a platform operator or cluster administrator, I need to create policies that
