@@ -124,3 +124,4 @@ CHANGELOG
 - *Abhishek, Chris, Jay* linking to tim hockins issue around defining `empty from` as `none`.
 - *Matt Fenwick* requested adding a visualization story to tier-1.
 - *Jay vyas* Moved the abov request for tier-1 to "Descoped" since its not an API thing, but it is a valid user story. 
+- *Eric Bannon* strongly upvotes the need for "connect via namespace NAME" (seeing customers run into confusion here a lot) 
