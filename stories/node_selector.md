@@ -1,5 +1,9 @@
 # Node Selector
 
+## Owners
+
+- @jayunit100 (Jay Vyas)
+
 ## User Story
 
 As a policy creator, I need to limit ingress from and egress to
