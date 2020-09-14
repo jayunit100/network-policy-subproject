@@ -111,6 +111,8 @@ These still might be explored by this group but are descoped from the primary us
 As we move things via PRs, lets note the context so that we can detect cycles and or changes that are reversing previous user requests.  If we notice any obvious disagreements, we can resolve it as a group.  This is an alterantive to voting which might collect 'passive' opinions which havent been deeply thought out.
 
 CHANGELOG
+- *Ricardo* added service selector policy
+- *Matt Fennwick* added priority policies
 - *Cody* added links v1modifying generified stories (policy target and so on)
 - *Jay* addressed clarity issues in the 'cant connect to the internet' and 'namespace by NAME' user stories.  
 - *Abhishek, Chris, Jay* linking to tim hockins issue around defining `empty from` as `none`.
