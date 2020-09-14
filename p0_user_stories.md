@@ -42,6 +42,10 @@ Taken from
 
 - I want to allow my application to communicate with high level ports of another "legacy" application, which is not accessed via a service, and which binds to a random port or binds a a random port (like passive FTP)
   - This can be added as an additional portsRange field, which might be an array of portRange object that contains a from and a to integer field
+  
+- I want to select a service to my Network Policy instead of selecting a namespace or a Pod
+  * As a User/App developer, I define a service with an external name, and I want to limit who can have access to this service.
+  * As a User/App developer, I exposed a service using node port/fall-through LB and I want to limit who can access to my services/backend pods from external.  
 
 - Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are (see https://github.com/kubernetes/kubernetes/issues/51726 for official issue pointing to this).  This might result in revising or removing policy types.
 
@@ -109,6 +113,7 @@ These still might be explored by this group but are descoped from the primary us
 As we move things via PRs, lets note the context so that we can detect cycles and or changes that are reversing previous user requests.  If we notice any obvious disagreements, we can resolve it as a group.  This is an alterantive to voting which might collect 'passive' opinions which havent been deeply thought out.
 
 CHANGELOG
+- *Ricardo* added service selector policy
 - *Mattfennwick* added a tier 1 policy for priorization / resolving 
 - *Cody* added links v1modifying generified stories (policy target and so on)
 - *Jay* addressed clarity issues in the 'cant connect to the internet' and 'namespace by NAME' user stories.  
