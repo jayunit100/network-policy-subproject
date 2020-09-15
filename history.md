@@ -31,7 +31,8 @@ Perhaps in the short term it would be best to follow a CRD approach.
 - January 15, same thread as above... a VERY STRONG user story for service network policies proposed, serendipitiously, by tim:
 
 ```
-(policy is specified against pods, not services) is the biggest mistake NetPolicy made. Maybe we should  EOL NetPolicy and rebuild it as ServiceNetPolicy. Only half joking. 
+(policy is specified against pods, not services) is the biggest mistake NetPolicy made. Maybe we should  EOL NetPolicy 
+and rebuild it as ServiceNetPolicy. Only half joking. 
 (tim h)
 ```
   Note that, this service policy is possible because kube-proxy by default preserves source IPs.
