@@ -1,5 +1,12 @@
 # Notable events in the history of the V1 API
 
+- Aug, 2017, on the introduction of IPBlocks to network policies.  An interesting comment on how IPBlocks can be used to "deny" things, and how "deny" functionality wasnt in the original interest of the NetworkPolicy API.
+  - the 'deny' semantic here was that this field had an `except` clause
+  - namespace and pod selectors *dont* have an except clause.
+```
+This backdoor-introduces "deny" logic, and I worry that this turns into a firewall.
+(timh)
+```
 - January 2, 2018: proposal to extend network policy with L7 concepts https://github.com/kubernetes/kubernetes/issues/58624 mostly decided against by the community. 
 ```
 Perhaps in the short term it would be best to follow a CRD approach.
