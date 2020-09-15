@@ -1,4 +1,22 @@
-# Notable events in the history of the V1 API
+# How did we get here? 
+
+Many interesting points were brought up in the 2016-2018 time frame as the API has evolved, which give us alot of insight into the user stories we see today.
+
+- It's intersection with Service Mesh technologies hasn't been addressed
+- The creation of 'exceptions', in CIDR blocks, was debated for its consitency 
+- The notion of L7 has been addressed in the past as, out of scope and ideal for a CRD 
+- The creation of a namespace and pod `and` filter was also seen as possibly adding confusion to the API
+- At one point, a very interesting suggestion - that ALL network policies should operate at the service level, was even made !
+- In general API promotion from beta, which we propose, will require first getting feedback from CNI providers on wether those changes are working well or not.
+
+Qoutes from previous mailing list discussions and github issues are below.  I think in conclusion from these:
+
+- We should trust our instincts around *service* boundaries for policies, which many folks have suggested and clearly has been suggested in the past as well.
+- We should look at L7 as a corner case which likely cannot be solved by this API
+- We should consider, in v2, revising the API from scratch to have less sharp edges
+- An operator or CRD which extends this API, rather then forcing changes on the broader SIG, translating 1-1 network policies, is probably a great goal for us to work towards, given that there is alot of work required to get any changes coordinated to network policies.
+
+# Notable commentary, on the history of the evolution of the NetworkPolicy API
 
 - Aug, 2017, on the introduction of IPBlocks to network policies.  An interesting comment on how IPBlocks can be used to "deny" things, and how "deny" functionality wasnt in the original interest of the NetworkPolicy API.
   - the 'deny' semantic here was that this field had an `except` clause
