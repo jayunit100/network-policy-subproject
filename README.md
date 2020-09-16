@@ -75,8 +75,9 @@ Owners: Abhishek (maybe dan?)
 The following set of conceptual docs outlines the progression from user stories towards
 high level actionable goals (no KEPs or detailed API changes suggested here).
 
-1) [create/update developer focused API](1_dev_scoped.md)
-2) [creation of a cluster-scoped API](1_cluster_scoped.md)
+1) [Security model proposal](proposals/1_model.md)
+2) [Create/update developer focused API](proposals/1_dev_scoped.md)
+3) [Creation of a cluster-scoped API](proposals/1_cluster_scoped.md)
 
 ### Implementation
 
