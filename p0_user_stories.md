@@ -133,3 +133,4 @@ As we move things via PRs, lets note the context so that we can detect cycles an
 - *Eric Bannon* strongly upvotes the need for "connect via namespace NAME" (seeing customers run into confusion here a lot) 
 - *David Byron* upvotes the "I want all namespaces matching X to be completely 100% locked-down by default" story.
 - *Ricardo* upvotes the "I want to allow my application to communicate with high level ports of another "legacy" application, which is not accessed via a service, and which binds to a random port or binds a a random port (like passive FTP)"
+- *Anish Ramasekar* upvotes "I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them."
