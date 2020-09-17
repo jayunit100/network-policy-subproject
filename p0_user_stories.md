@@ -46,6 +46,7 @@ Taken from
 
 - I want to allow my application to communicate with high level ports of another "legacy" application, which is not accessed via a service, and which binds to a random port or binds a a random port (like passive FTP)
   - This can be added as an additional portsRange field, which might be an array of portRange object that contains a from and a to integer field
+  [Port Set/Port Range](stories/port_ranges.md)
   
 - I want to select a service to my Network Policy instead of selecting a namespace or a Pod
   * As a User/App developer, I define a service with an external name, and I want to limit who can have access to this service.
@@ -126,3 +127,4 @@ CHANGELOG
 - *Jay vyas* Moved the abov request for tier-1 to "Descoped" since its not an API thing, but it is a valid user story. 
 - *Eric Bannon* strongly upvotes the need for "connect via namespace NAME" (seeing customers run into confusion here a lot) 
 - *David Byron* upvotes the "I want all namespaces matching X to be completely 100% locked-down by default" story.
+- *Ricardo* upvotes the "I want to allow my application to communicate with high level ports of another "legacy" application, which is not accessed via a service, and which binds to a random port or binds a a random port (like passive FTP)"
