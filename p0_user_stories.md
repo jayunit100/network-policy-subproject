@@ -113,17 +113,22 @@ These still might be explored by this group but are descoped from the primary us
 - I want to have a named way to add a policy for containers that can or cannot access a MySQL instance in my data center, without knowing that services IP address.
 
 
-# CHANGELOG
+# CHANGELOG and VOTES
 
 As we move things via PRs, lets note the context so that we can detect cycles and or changes that are reversing previous user requests.  If we notice any obvious disagreements, we can resolve it as a group.  This is an alterantive to voting which might collect 'passive' opinions which havent been deeply thought out.
 
-CHANGELOG
+## CHANGELOG
+
 - *Ricardo* added service selector policy
 - *Mattfennwick* added a tier 1 policy for priorization / resolving 
 - *Cody* added links v1modifying generified stories (policy target and so on)
 - *Jay* addressed clarity issues in the 'cant connect to the internet' and 'namespace by NAME' user stories.  
 - *Abhishek, Chris, Jay* linking to tim hockins issue around defining `empty from` as `none`.
-- *Matt Fenwick* requested adding a visualization story to tier-1.
+
+
+## VOTES (please only upvote a maximum of 3 policies)
+
+- *Matt Fenwick* requested adding a visualization story to tier-1 .   (Interpretted as an upvote)
 - *Jay vyas* Moved the abov request for tier-1 to "Descoped" since its not an API thing, but it is a valid user story. 
 - *Eric Bannon* strongly upvotes the need for "connect via namespace NAME" (seeing customers run into confusion here a lot) 
 - *David Byron* upvotes the "I want all namespaces matching X to be completely 100% locked-down by default" story.
