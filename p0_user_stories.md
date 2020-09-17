@@ -125,3 +125,4 @@ CHANGELOG
 - *Matt Fenwick* requested adding a visualization story to tier-1.
 - *Jay vyas* Moved the abov request for tier-1 to "Descoped" since its not an API thing, but it is a valid user story. 
 - *Eric Bannon* strongly upvotes the need for "connect via namespace NAME" (seeing customers run into confusion here a lot) 
+- *David Byron* upvotes the "I want all namespaces matching X to be completely 100% locked-down by default" story.
