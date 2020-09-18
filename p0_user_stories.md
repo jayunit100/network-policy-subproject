@@ -133,3 +133,4 @@ As we move things via PRs, lets note the context so that we can detect cycles an
 - *Eric Bannon* strongly upvotes the need for "connect via namespace NAME" (seeing customers run into confusion here a lot) 
 - *David Byron* upvotes the "I want all namespaces matching X to be completely 100% locked-down by default" story.
 - *Ricardo* upvotes the "I want to allow my application to communicate with high level ports of another "legacy" application, which is not accessed via a service, and which binds to a random port or binds a a random port (like passive FTP)"
+- *Tim Downey* upvotes "I want 2 apps in different namespaces to connect via namespace NAME" **and** "I dont want to look at 10 or 100 policies to figure out whether I have the right allow rules"
