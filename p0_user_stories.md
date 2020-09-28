@@ -35,8 +35,8 @@ Taken from
 
 ### v1 modifying
 
-- I want to select host traffic from or to a Kubernetes node using the Node resource and its labels. *Do we need parameters to specify when to evaulate policy (pre/post SNAT for example).*
-
+- I want to select *host traffic* from or to a Kubernetes node using the Node resource and its labels. 
+  - *TBD ... Do we need parameters to specify when to evaulate policy (pre/post SNAT for example).* ?
   [Node Selector](stories/node_selector.md)
   
 - I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them.
