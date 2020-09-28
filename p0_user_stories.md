@@ -8,6 +8,10 @@ Taken from
 # Terminology
 
 - *app*: a program or collection of programs running in a namespace that comprise a end-user consumed service.  Common "guestbook", "blackduck", "backend API services", or the "ELK" stack, which usually is consumed through Kibana.
+- *tier-1 policies*: this is a division between user stories that we've made based on feedback over several months.  Some policies were generally agreed on as more relevant to a broader group, and thus categorized that way (tier-1).  
+- *tier-2 policies* Others were considered interesting, but either out of scope or simply very difficult to "nail down" in terms of precise semantics.  These are in tier-2.  They aren't necessarily "bad ideas" but rather, will require deeper ownership and commitment then the tier-1 policies to drive forward.
+- *modifying* these are policies which are likely to modify the API in a way that might make them harder to implement/propose to the broader sig.
+- *non-modifying* these are policies which likely wont break existing semantics of v1 policies.
 
 # Application scoped User stories
 
