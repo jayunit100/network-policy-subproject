@@ -1,8 +1,14 @@
-This document briefly describes the 3 user stories that the Network Policy API subproject subproject understands as a priority 0 to be added to the current networking.k8s.io/v1 API group. 
+This document briefly describes the 3 user stories that the Network Policy API subproject subproject has determined:
+- Are relatively high in priority and have been eagerly discussed over the last several months
+- Can be added to the current networking.k8s.io/v1 API group
+- xref: https://docs.google.com/document/d/1_5SpZwvi9KlNMT6psrK1yu4Eo7G2FxyMuHHz-JIHd5Y/edit?usp=sharing (original brainstorming doc)
+- xref: https://github.com/jayunit100/network-policy-subproject/blob/master/p0_user_stories.md (superset of all user stories proposed)
 
-**NOTE**: these are only the use-cases we want to open KEPs for. We are looking for feedback on whether these use-cases make sense to propose an official KEP. 
+------------------------------------------------
 
-xref: https://docs.google.com/document/d/1_5SpZwvi9KlNMT6psrK1yu4Eo7G2FxyMuHHz-JIHd5Y/edit?usp=sharing 
+# Proposal to Sig-network
+
+The following user stories, which roughly map to KEPs (small) or working group tasks (medium/large) which will result in KEPs, are listed below in order of relative difficulty and scope.
 
 ## Port Ranges / Port Set (Small)
 
