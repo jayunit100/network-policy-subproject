@@ -18,20 +18,16 @@ Taken from
   can't read (or write) the labels for those namespaces from my Kubernetes
   client.   I cannot select pods for this because I don't know all the labels
   and names of pod/services that I want to contact ahead of time.
-  
-  [Name as Policy Target](stories/name_as_policy_target.md)
+  - [Name as Policy Target](stories/name_as_policy_target.md)
 
 - I want different pods (with potentially different labels) that fulfill a service to be able talk to each other, without talking to other services but I don't know the labels on these services.
-  
-  [Ingress Rules Targeting Services](stories/ingress_rules_targeting_services.md)
+  - [Ingress Rules Targeting Services](stories/ingress_rules_targeting_services.md)
 
 - I dont want to look at 10 or 100 policies to figure out whether I have the right allow rules.
-
-  [Pod Reachability Query](stories/pod_reachability_query.md)
+  - [Pod Reachability Query](stories/pod_reachability_query.md)
 
 - I wrote a policy, but am not sure if my policy did the right thing, nor if it has taken effect on the pods that I'm concerned with, yet.
-
-  [Policy Query](stories/policy_query.md)
+  - [Policy Query](stories/policy_query.md)
 
 ### v1 modifying
 
@@ -41,24 +37,22 @@ Taken from
   
 - I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them.
   - We can use a slice instead of a string for CIDR (KEP-able)
-
-  [Named Endpoint Set](stories/named_endpoint_set.md)
+  - [Named Endpoint Set](stories/named_endpoint_set.md)
 
 - I want to allow my application to communicate with high level ports of another "legacy" application, which is not accessed via a service, and which binds to a random port or binds a a random port (like passive FTP)
   - This can be added as an additional portsRange field, which might be an array of portRange object that contains a from and a to integer field
-  [Port Set/Port Range](stories/port_ranges.md)
+  - [Port Set/Port Range](stories/port_ranges.md)
   
 - I want to select a service to my Network Policy instead of selecting a namespace or a Pod
-  * As a User/App developer, I define a service with an external name, and I want to limit who can have access to this service.
-  * As a User/App developer, I exposed a service using node port/fall-through LB and I want to limit who can access to my services/backend pods from external.  
+  - * As a User/App developer, I define a service with an external name, and I want to limit who can have access to this service.
+  - * As a User/App developer, I exposed a service using node port/fall-through LB and I want to limit who can access to my services/backend pods from external.  
 
 - Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are (see https://github.com/kubernetes/kubernetes/issues/51726 for official issue pointing to this).  This might result in revising or removing policy types.
 
 ## tier-2
 
 - I want to be able to scrape from pod endpoints for every pod in my cluster, but can't afford to make new policies for each one given the large rate of pod churn.
-
-  [Cluster Scoped Policy](stories/cluster_scoped_policy.md)
+  - [Cluster Scoped Policy](stories/cluster_scoped_policy.md)
 
 # Cluster scoped user stories
 
