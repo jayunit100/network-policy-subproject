@@ -1,3 +1,5 @@
+# NetworkPolicy User Stories
+
 Initial proposal or priorities, based on feasabiliy and overall user engagement... reprioritization welcome, please PR changes and in case of any major conflicts we can discuss in the broader group.  
 
 Taken from 
@@ -5,7 +7,13 @@ Taken from
 - https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYgesG-itQHMiU/edit# 
 - https://docs.google.com/document/d/1AtWQy2fNa4qXRag9cCp5_HsefD7bxKe3ea2RPn8jnSs/edit . 
 
-# Terminology
+This document attempts to formalize and consolidate the many docs and spreadsheets from the original meetings into a single browsable artifact, which eventually can translate into KEP-like-documents, KEPs, and possibly example CRDs and other artifacts which can be used to capture the overall evolution of the network policy working group over time.
+
+## Contributing
+
+Please file an issue, issue a PR, or cast a vote.  The more Feedback we get, the better !
+
+## Terminology
 
 - *app*: a program or collection of programs running in a namespace that comprise a end-user consumed service.  Common "guestbook", "blackduck", "backend API services", or the "ELK" stack, which usually is consumed through Kibana.
 - *tier-1 policies*: this is a division between user stories that we've made based on feedback over several months.  Some policies were generally agreed on as more relevant to a broader group, and thus categorized that way (tier-1).  
@@ -13,11 +21,15 @@ Taken from
 - *modifying* these are policies which are likely to modify the API in a way that might make them harder to implement/propose to the broader sig.
 - *non-modifying* these are policies which likely wont break existing semantics of v1 policies.
 
-# Application scoped User stories
+-----------------------------------------------------------
 
-## tier-1
+# All User Stories
 
-### non v1 modifying
+## Application scoped User stories
+
+### tier-1
+
+#### non v1 modifying
 - I want 2 apps in different namespaces to connect via namespace NAME, because I
   can't read (or write) the labels for those namespaces from my Kubernetes
   client.   I cannot select pods for this because I don't know all the labels
@@ -33,7 +45,7 @@ Taken from
 - I wrote a policy, but am not sure if my policy did the right thing, nor if it has taken effect on the pods that I'm concerned with, yet.
   - [Policy Query](stories/policy_query.md)
 
-### v1 modifying
+#### v1 modifying
 
 - I want to select *host traffic* from or to a Kubernetes node using the Node resource and its labels, because a I want to protect a set of critical services on a dynamic pool of nodes in my cluster.
   - *TBD ... Do we need parameters to specify when to evaulate policy (pre/post SNAT for example).* ?
@@ -53,14 +65,14 @@ Taken from
 
 - Writing network policies is hard, I forget what the defaults for ports, ingress/egress, and nil/empty collections (for label selectors and policy structs) are (see https://github.com/kubernetes/kubernetes/issues/51726 for official issue pointing to this).  This might result in revising or removing policy types.
 
-## tier-2
+### tier-2
 
 - I want to be able to scrape from pod endpoints for every pod in my cluster, but can't afford to make new policies for each one given the large rate of pod churn.
   - [Cluster Scoped Policy](stories/cluster_scoped_policy.md)
 
-# Cluster scoped user stories
+## Cluster scoped user stories
 
-## tier-1
+### tier-1
 
 - I only want pods on nodes that are labeled as “infrastructure” nodes to be able to access the Kubernetes apiserver; 
 other pods should be blocked from accessing it via any IP.
@@ -73,7 +85,7 @@ other pods should be blocked from accessing it via any IP.
 
 - I want to write policies which deny specific traffic, and I want to assign priorities to my policies, and have the CNI use the priorities to resolve conflicts (recently formally added, mattfennwick)
 
-## tier-2
+### tier-2
 
 - I want all namespaces to be “isolated” (don’t accept traffic from other Namespaces) by default; developers must specify if they want other namespaces to be able to access their services.
 
@@ -88,11 +100,11 @@ except for pods in Namespace X, except I want to run kube2iam as a metadata prox
 
 - I want all pods to be blocked from accessing the internet by default, with exception allowing case-by-case allow-listing of certain IP ranges.  Convenience/Sugar story.
 
-# Descoped from NetworkPolicy API
+## Descoped from NetworkPolicy API
 
 These still might be explored by this group but are descoped from the primary use cases reported to the SIG.
 
-## Tier 1
+### Tier 1
 
 - Prioritize Network Policy - I want to create a rule that I’m sure will be executed before anything else.
 
@@ -104,12 +116,14 @@ These still might be explored by this group but are descoped from the primary us
 
 - I want visualization of my network policies, as a tool to help me create accurate network policies as well as to help me verify existing network policies for correctness
 
-## Tier 2
+### Tier 2
 
 - I want to restrict certain processes in a pod without restricting others, so that  some processes are not able to make certain network calls in a cluster where certain set pods running an old version of Nginx are at risk of being comprimised.
 
 - I want to have a named way to add a policy for containers that can or cannot access a MySQL instance in my data center, without knowing that services IP address.
 
+
+----------------------------------------------------
 
 # CHANGELOG and VOTES
 
