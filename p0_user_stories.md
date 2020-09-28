@@ -135,3 +135,4 @@ As we move things via PRs, lets note the context so that we can detect cycles an
 - *Ricardo* upvotes the "I want to allow my application to communicate with high level ports of another "legacy" application, which is not accessed via a service, and which binds to a random port or binds a a random port (like passive FTP)"
 - *Tim Downey* upvotes "I want 2 apps in different namespaces to connect via namespace NAME" **and** "I dont want to look at 10 or 100 policies to figure out whether I have the right allow rules"
 - *Anish Ramasekar* upvotes "I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them."
+- *Andrew Sy Kim upvotes "Name as Policy Target", "Node Selector", and "Cluster Scoped Policy"
