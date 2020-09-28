@@ -31,7 +31,7 @@ Taken from
 
 ### v1 modifying
 
-- I want to select *host traffic* from or to a Kubernetes node using the Node resource and its labels. 
+- I want to select *host traffic* from or to a Kubernetes node using the Node resource and its labels, because a I want to protect a set of critical services on a dynamic pool of nodes in my cluster.
   - *TBD ... Do we need parameters to specify when to evaulate policy (pre/post SNAT for example).* ?
   - [Node Selector](stories/node_selector.md)
   
