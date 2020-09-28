@@ -13,6 +13,14 @@ or implicitly enforced by the provider which the developers may not be aware of,
 or varies from provider to provider and the experience is not guaranteed to be
 uniform across.
 
+### Network Policy Use Cases
+
+Network policy is used for the following scenarios:
+1. Implementing microsegmentation in a multi-tenant cluster
+2. Restricting pods from being able to talk to the internet/highly secure VMs
+3. Forcing all egress traffic to go through an egress gateway
+4. Protecting pods from DoS attacks
+
 ## Proposal
 
 To get more context on this document please refer to this original [proposal](https://docs.google.com/document/d/10t4q5XO1ED2PnK3ishn4y3G4Tma7uMYgesG-itQHMiU/edit#).
