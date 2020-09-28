@@ -122,6 +122,7 @@ These still might be explored by this group but are descoped from the primary us
 
 - I want to have a named way to add a policy for containers that can or cannot access a MySQL instance in my data center, without knowing that services IP address.
 
+- As a cloud provider id like to block certain source ports, for the sake of DOS prevention.
 
 ----------------------------------------------------
 
