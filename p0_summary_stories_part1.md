@@ -10,7 +10,7 @@ This document briefly describes the 3 user stories that the Network Policy API s
 
 The following user stories, which roughly map to KEPs (small) or working group tasks (medium/large) which will result in KEPs, are listed below in order of relative difficulty and scope.
 
-## Port Ranges / Port Set (Small)
+## 1. Port Ranges / Port Set (Small)
 
 **Objective**: Allow a Network Policy to contemplate a set of ports in a single rule. 
 
@@ -23,7 +23,7 @@ The following user stories, which roughly map to KEPs (small) or working group t
 
 -------
 
-## Select Namespace by name in a NetworkPolicy (Medium)
+## 2. Select Namespace by name in a NetworkPolicy (Medium)
 
 **Objective**: Allow a NetworkPolicy to use namespace names as the selector, instead of labels
 
@@ -36,7 +36,7 @@ The following user stories, which roughly map to KEPs (small) or working group t
 
 -------
 
-## Cluster-Scoped Network Policy (Large)
+## 3. Cluster-Scoped Network Policy (Large)
 
 **Objective**: Enforce NetworkPolicy rules for a set of (or all) namespaces in a cluster.
 
