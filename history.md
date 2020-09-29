@@ -20,7 +20,10 @@ Many interesting points were brought up in the 2016-2018 time frame as the API h
 
 # Notable commentary, on the history of the evolution of the NetworkPolicy API
 
+- June 20, 2017 Namespace by name (a contraversial topic that alot of folks want) was suggested, https://github.com/kubernetes/kubernetes/issues/47797.  This was again re-suggested recently (see end of this timeline)
+
 - Aug, 2017, on the introduction of IPBlocks to network policies.  An interesting comment on how IPBlocks can be used to "deny" things, and how "deny" functionality wasnt in the original interest of the NetworkPolicy API.
+
   - the 'deny' semantic here was that this field had an `except` clause
   - namespace and pod selectors *dont* have an except clause.
 ```
@@ -109,10 +112,10 @@ within a single company, not actually different companies.
 (dan w)
 ```
 - June 25, 2018: Proposal to add calico globalnetworkpolicy to the K8s api was put on the mailing list https://groups.google.com/g/kubernetes-sig-network/c/pFyfse3njD4/m/vuhdqo4nAwAJ.
-  - No major opposition
+  - No major opposition.
   - Nobody seemed to take up the offer to add it to the core API either
 - Oct 21, 2019: A KEP by vallery for default restricted network behaviour was closed, based on the idea that it isnt so uch a network policy issue, but rather a potentially different API.
+- Feb 17, 2020: Namespace by Name selectors proposed *again*  https://github.com/kubernetes/kubernetes/issues/88253
 
-  
 Note most of this history comes from https://groups.google.com/g/kubernetes-sig-network/ and https://github.com/kubernetes/kubernetes/issues/ .  
 There might of course be other back channel discussions or PR debates that are also relevant.
