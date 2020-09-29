@@ -149,3 +149,4 @@ As we move things via PRs, lets note the context so that we can detect cycles an
 - *Tim Downey* upvotes "I want 2 apps in different namespaces to connect via namespace NAME" **and** "I dont want to look at 10 or 100 policies to figure out whether I have the right allow rules"
 - *Anish Ramasekar* upvotes "I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them."
 - *Andrew Sy Kim* upvotes "Name as Policy Target", "Node Selector", and "Cluster Scoped Policy"
+- *Jay Vyas* upvotes "Name as Policy Target"
