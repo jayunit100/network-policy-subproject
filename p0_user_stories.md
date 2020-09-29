@@ -44,6 +44,9 @@ Please file an issue, issue a PR, or cast a vote.  The more Feedback we get, the
 
 - I wrote a policy, but am not sure if my policy did the right thing, nor if it has taken effect on the pods that I'm concerned with, yet.
   - [Policy Query](stories/policy_query.md)
+  
+- I want to restrict egress from my pods based on FQDNs, not IP addresses. For example, "allow pods to egress to www.my-trusted-company.com".
+  - [FQDN policy](stories/fqdn_policy.md)
 
 #### v1 modifying
 
@@ -122,7 +125,7 @@ These still might be explored by this group but are descoped from the primary us
 
 - I want to have a named way to add a policy for containers that can or cannot access a MySQL instance in my data center, without knowing that services IP address.
 
-- As a cloud provider id like to block certain source ports, for the sake of DOS prevention.
+- I want to have a way to restrict incoming traffic based on the source port of the packet. Something like "deny any incoming traffic comming from 0.0.0.0/0:1234", where 1234 is the source port I want to block, would work.
 
 ----------------------------------------------------
 
@@ -149,6 +152,7 @@ As we move things via PRs, lets note the context so that we can detect cycles an
 - *Tim Downey* upvotes "Policy Target/connect via Namespace Name" 
 - *Tim Downey* upvotes "I dont want to look at 10 or 100 policies to figure out whether I have the right allow rules"
 - *Anish Ramasekar* upvotes "I don't want to directly update my CIDR rules for a policy every time I add a new node or other group of IPs, which need to have policies associated with them."
+- *Gobind Johar* upvotes "Name as Policy Target", "Cluster Scoped Policy" and "FQDN Policy"
 - *Andrew Sy Kim* upvotes "Name as Policy Target/connect via Namespace Name"
 - *Andrew Sy Kim* upvotes "Node Selector", and "Cluster Scoped Policy"
 - *Jay Vyas* upvotes "Connect via namespace name"
