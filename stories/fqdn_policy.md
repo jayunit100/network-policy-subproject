@@ -30,3 +30,7 @@ Many existing products already offer this functionality today:
 3. [OpenShift egress firewall with FQDN](https://docs.openshift.com/container-platform/4.3/networking/openshift_sdn/configuring-egress-firewall.html#domain-name-server-resolution_configuring-an-egress-firewall)
 
 (related: see https://github.com/kubernetes/kubernetes/issues/50453)
+
+## SIG Network Proposal
+
+https://docs.google.com/document/d/1Htcy4UXKZytUe-lWJIIEJZzoa3MtCMr-Ms_KONaXirM/edit#
