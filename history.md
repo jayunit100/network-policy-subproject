@@ -20,6 +20,17 @@ Many interesting points were brought up in the 2016-2018 time frame as the API h
 
 # Notable commentary, on the history of the evolution of the NetworkPolicy API
 
+- Early commentary on namespaces as names.  From a post in https://groups.google.com/g/kubernetes-sig-network/c/GzSGt-pxBYQ/m/Rbrxve-gGgAJ , the original motivation for namespaces as name selectors was suggested in 2016 by dan winship.  
+
+```
+2) we need to clarify how namespaces are matched. I'm pretty 
+uncomfortable with using labels here, since anyone can add labels at 
+any time to any namespace and thus send traffic to your pod if they 
+know the label you're using. If it were simply a namespace name, it's 
+much easier to specifically allow only namespaces you control since you 
+know your own namespace names. 
+```
+
 - Early commentary on null / empty fields, and cleaning them up from tim hockins: https://github.com/kubernetes/kubernetes/issues/51726
 
 - June 20, 2017 Namespace by name (a contraversial topic that alot of folks want) was suggested, https://github.com/kubernetes/kubernetes/issues/47797.  This was again re-suggested recently (see end of this timeline)
