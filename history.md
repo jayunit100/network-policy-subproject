@@ -20,6 +20,8 @@ Many interesting points were brought up in the 2016-2018 time frame as the API h
 
 # Notable commentary, on the history of the evolution of the NetworkPolicy API
 
+- Early commentary on null / empty fields, and cleaning them up from tim hockins: https://github.com/kubernetes/kubernetes/issues/51726
+
 - June 20, 2017 Namespace by name (a contraversial topic that alot of folks want) was suggested, https://github.com/kubernetes/kubernetes/issues/47797.  This was again re-suggested recently (see end of this timeline)
 
 - Aug, 2017, on the introduction of IPBlocks to network policies.  An interesting comment on how IPBlocks can be used to "deny" things, and how "deny" functionality wasnt in the original interest of the NetworkPolicy API.
