@@ -2,7 +2,7 @@
 
 Many interesting points were brought up in the 2016-2018 time frame as the API has evolved, which give us alot of insight into the user stories we see today.
 
-- It's intersection with Service Mesh technologies hasn't been addressed
+- It's intersection with Service Mesh technologies hasn't been addressed, but its clear that theres a documentation hole on wether you can implement multitenant security w networkpolicies alone vs service mesh's, and what the tradeoffs are. 
 - The creation of 'exceptions', in CIDR blocks, was debated for its consitency 
 - The notion of L7 has been addressed in the past as, out of scope and ideal for a CRD 
 - The creation of a namespace and pod `and` filter was also seen as possibly adding confusion to the API
