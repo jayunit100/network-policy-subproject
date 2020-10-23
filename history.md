@@ -20,7 +20,7 @@ Many interesting points were brought up in the 2016-2018 time frame as the API h
 
 # Notable commentary, on the history of the evolution of the NetworkPolicy API
 
-- Early commentary on namespaces as names.  From a post in https://groups.google.com/g/kubernetes-sig-network/c/GzSGt-pxBYQ/m/Rbrxve-gGgAJ , the original motivation for namespaces as name selectors was suggested in 2016 by dan winship.  
+- Early commentary on namespaces as names.  From a post in https://groups.google.com/g/kubernetes-sig-network/c/GzSGt-pxBYQ/m/Rbrxve-gGgAJ , the original motivation for namespaces as name selectors was suggested in 2016 by dan.  Note this re-emerged recently again (see reference in the bottom of this timeline).
 
 ```
 2) we need to clarify how namespaces are matched. I'm pretty 
@@ -128,7 +128,7 @@ within a single company, not actually different companies.
   - No major opposition.
   - Nobody seemed to take up the offer to add it to the core API either
 - Oct 21, 2019: A KEP by vallery for default restricted network behaviour was closed, based on the idea that it isnt so uch a network policy issue, but rather a potentially different API.
-- Feb 17, 2020: Namespace by Name selectors proposed *again*  https://github.com/kubernetes/kubernetes/issues/88253
+- Feb 17, 2020: Namespace by Name (namespace as `name` rather then label selectors) proposed *again*  https://github.com/kubernetes/kubernetes/issues/88253.
 
 Note most of this history comes from https://groups.google.com/g/kubernetes-sig-network/ and https://github.com/kubernetes/kubernetes/issues/ .  
 There might of course be other back channel discussions or PR debates that are also relevant.
