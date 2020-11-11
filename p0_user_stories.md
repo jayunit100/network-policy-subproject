@@ -46,7 +46,7 @@ Please file an issue, issue a PR, or cast a vote.  The more Feedback we get, the
   - [Policy Query](stories/policy_query.md)
   
 - I want to restrict egress from my pods based on FQDNs, not IP addresses. For example, "allow pods to egress to www.my-trusted-company.com".
-  - [FQDN policy](stories/fqdn_policy.md)
+  - [FQDN policy](stories/fqdn_policy.md) (see also https://docs.google.com/document/d/1Htcy4UXKZytUe-lWJIIEJZzoa3MtCMr-Ms_KONaXirM/edit?ts=5f84ec53)
 
 #### v1 modifying
 
