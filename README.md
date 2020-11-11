@@ -1,5 +1,15 @@
 # The NetworkPolicy++ Subproject 'super-kep'
 
+
+# NEWS
+
+Currently were actively working on 4 KEPs to improve the 
+policy API, summarized here, https://docs.google.com/document/d/1_clStao-uM3OblOTsA4Kgx2y4C9a6KXmdOywW4tFSLY/edit#
+our agenda as always is here https://docs.google.com/document/d/1AtWQy2fNa4qXRag9cCp5_HsefD7bxKe3ea2RPn8jnSs/edit#. 
+
+
+----------------------------
+
 This repository attempts to capture all of the work done by the NetworkPolicy working group as a series of documents which
 can be reused, and formulated into a series of KEPs, CRDs, and proposals over time, based on ideas the communtiy came up with on how to improve the NetworkPolicy API.
 
