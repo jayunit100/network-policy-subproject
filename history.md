@@ -129,6 +129,7 @@ within a single company, not actually different companies.
   - Nobody seemed to take up the offer to add it to the core API either
 - Oct 21, 2019: A KEP by vallery for default restricted network behaviour was closed, based on the idea that it isnt so uch a network policy issue, but rather a potentially different API.
 - Feb 17, 2020: Namespace by Name (namespace as `name` rather then label selectors) proposed *again*  https://github.com/kubernetes/kubernetes/issues/88253.
+- Dec 22, 2020: Conversation w/ bryan boreham on why service policies dont exist yet ~ partially because of the desire to avoid biasing against iptables, which is easy to do service policies on
 
 Note most of this history comes from https://groups.google.com/g/kubernetes-sig-network/ and https://github.com/kubernetes/kubernetes/issues/ .  
 There might of course be other back channel discussions or PR debates that are also relevant.
