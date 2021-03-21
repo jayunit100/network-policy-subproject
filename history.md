@@ -129,6 +129,7 @@ within a single company, not actually different companies.
   - Nobody seemed to take up the offer to add it to the core API either
 - Oct 21, 2019: A KEP by vallery for default restricted network behaviour was closed, based on the idea that it isnt so uch a network policy issue, but rather a potentially different API.
 - Feb 17, 2020: Namespace by Name (namespace as `name` rather then label selectors) proposed *again*  https://github.com/kubernetes/kubernetes/issues/88253.
+- Nov 9, 2020: NetworkPolicy microversioning proposed by Dan winship
 - Dec 22, 2020: Conversation w/ bryan boreham on why service policies dont exist yet ~ partially because of the desire to avoid biasing against iptables, which is easy to do service policies on
 - March 15, 2021: Namespace as Name and Port ranges were both added to upstream Kubernetes by the Network Policy subproject.  Matt fennwicks cyclonus tool for fuzz testing identified a few issues in different CNI providers, demonstrating that the NetworkPolicy API continues to need refinement and enforcement by different CNIs.
 
