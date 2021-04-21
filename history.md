@@ -1,3 +1,6 @@
+(note this is open to PRs ! just an attempt at collecting history, which is of course subject to curation and interpretation)
+
+
 # How did we get here? 
 
 Many interesting points were brought up in the 2016-2018 time frame as the API has evolved, which give us alot of insight into the user stories we see today.
