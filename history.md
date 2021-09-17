@@ -135,6 +135,17 @@ within a single company, not actually different companies.
 - Nov 9, 2020: NetworkPolicy microversioning proposed by Dan winship
 - Dec 22, 2020: Conversation w/ bryan boreham on why service policies dont exist yet ~ partially because of the desire to avoid biasing against iptables, which is easy to do service policies on
 - March 15, 2021: Namespace as Name and Port ranges were both added to upstream Kubernetes by the Network Policy subproject.  Matt fennwicks cyclonus tool for fuzz testing identified a few issues in different CNI providers, demonstrating that the NetworkPolicy API continues to need refinement and enforcement by different CNIs.
+- Sept 14 2021: Ricardo merges port ranges into cillium, others get them working in ovn-kubernetes.
+- Sept 15 2021: Cluster Network Policy proposal hardened and proposed at sig-network, main debate is on `empower` vs `priority` values as integers.  Group leaning to integers bc they are more flexible, albeit more complex, and more common
+since theyre used everywhere (cloud flare, azure, gce)...
+- Sept 16 2021: Antonio suggested ACLs and Rules as a possible future V2 impl for network policy
+```
+
+Traditionally, you define network ACLs that contain rules, a rule has a number, these rules are evaluated in order to match certain traffic and to apply an action on that traffic.
+These ACLs are associated with subnets, interfaces, networks, .... , and you build your "Network policy" based on this intersection of ACLs and Rules applied to the different parts of your network.
+The drawbacks of this approach is that it doesn't scale well with multiple users, but works well for an environment with a single administrator, like Cluster Network Policy.
+My personal feeling is that when we say "we want priorities" for CNP, we mean "we want something similar to ACLs and Rules"
+```
 
 Note most of this history comes from https://groups.google.com/g/kubernetes-sig-network/ and https://github.com/kubernetes/kubernetes/issues/ .  
 There might of course be other back channel discussions or PR debates that are also relevant.
