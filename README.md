@@ -1,5 +1,11 @@
-# The NetworkPolicy++ Subproject 'super-kep'
+This work is now deprecated, and we were able to succesfully merge several KEPS into upstream sig-network to
+move the networkpolicy API forward.  Thanks everyone for helping us start this work !
 
+Please go to kubernetes/enhancements/sig-network to see the emerging cluster, admin, policy network policies.
+
+
+Old content is below for historical purposes
+--------------------------------------------
 
 # NEWS
 
