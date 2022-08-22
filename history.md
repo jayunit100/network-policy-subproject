@@ -36,6 +36,8 @@ know your own namespace names.
 
 - Early commentary on null / empty fields, and cleaning them up from tim hockins: https://github.com/kubernetes/kubernetes/issues/51726
 
+- March, 2016 Casey Davenport filed the "genesis" NetworkPolicy issue in Kubernetes to make the API official  https://github.com/kubernetes/kubernetes/issues/22469 !
+
 - June 20, 2017 Namespace by name (a contraversial topic that alot of folks want) was suggested, https://github.com/kubernetes/kubernetes/issues/47797.  This was again re-suggested recently (see end of this timeline)
 
 - Aug, 2017, on the introduction of IPBlocks to network policies.  An interesting comment on how IPBlocks can be used to "deny" things, and how "deny" functionality wasnt in the original interest of the NetworkPolicy API.
