@@ -38,6 +38,21 @@ know your own namespace names.
 
 - March, 2016 Casey Davenport filed the "genesis" NetworkPolicy issue in Kubernetes to make the API official  https://github.com/kubernetes/kubernetes/issues/22469 !
 
+- April 2016: From the mailing list thread, some q's about wheter podSelectors should be nested as opposed to top level objects... https://groups.google.com/g/kubernetes-sig-network/c/vXWUNpkiJ30/m/WoGHQb01AwAJ 
+```
+IIRC we stuck with a whitelist because we wanted to get a baseline
+policy into Kubernetes earlier, and argue about more complex policy
+like this later :)
+...
+Also IIRC we (and by that I mean at least some of us, I'm not sure
+about all) wanted to keep a flatter mapping between NP objects and
+pods, instead of huge NP objects that have a ton of rules that can
+apply to many different things.  
+```
+
+
+
+
 - June 20, 2017 Namespace by name (a contraversial topic that alot of folks want) was suggested, https://github.com/kubernetes/kubernetes/issues/47797.  This was again re-suggested recently (see end of this timeline)
 
 - Aug, 2017, on the introduction of IPBlocks to network policies.  An interesting comment on how IPBlocks can be used to "deny" things, and how "deny" functionality wasnt in the original interest of the NetworkPolicy API.
